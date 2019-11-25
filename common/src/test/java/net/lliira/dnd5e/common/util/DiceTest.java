@@ -1,4 +1,4 @@
-package net.lliira.dnd5e.common;
+package net.lliira.dnd5e.common.util;
 
 import org.junit.Assert;
 import org.junit.Test;
