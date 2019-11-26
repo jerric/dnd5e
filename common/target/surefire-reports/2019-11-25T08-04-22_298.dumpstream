@@ -1,0 +1,4 @@
+# Created at 2019-11-25T08:04:24.957
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Dev\code\dnd5e\common\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

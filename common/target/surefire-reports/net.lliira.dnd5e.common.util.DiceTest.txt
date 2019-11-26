@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: net.lliira.dnd5e.common.util.DiceTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 s - in net.lliira.dnd5e.common.util.DiceTest
