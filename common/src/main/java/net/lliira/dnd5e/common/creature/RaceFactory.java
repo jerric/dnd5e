@@ -27,6 +27,7 @@ public class RaceFactory {
         for (File file : files) {
             try {
                 var race = gson.fromJson(new FileReader(file), Race.class);
+                races.add(race);
             } catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
             }
