@@ -12,8 +12,8 @@ public class Dice {
         return new Dice(sides);
     }
 
-    private final Random random_;
-    private final int sides_;
+    private final Random random;
+    private final int sides;
 
     private Dice(int sides) {
         this(new Random(System.currentTimeMillis()), sides);
@@ -21,8 +21,8 @@ public class Dice {
 
     private Dice(Random random, int sides) {
         if (sides < 1) throw new IllegalArgumentException("Dice must have at least 1 side.");
-        this.random_ = random;
-        this.sides_ = sides;
+        this.random = random;
+        this.sides = sides;
     }
 
     public int roll() {
@@ -33,7 +33,7 @@ public class Dice {
         if (count < 1) throw new IllegalArgumentException("Must roll at least 1 dice");
         int sum = 0;
         for(int i = 0; i < count; i++) {
-            sum += random_.nextInt(sides_) + 1;
+            sum += random.nextInt(sides) + 1;
         }
         return sum + modifier;
     }
