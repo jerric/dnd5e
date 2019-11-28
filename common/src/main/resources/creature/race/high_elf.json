@@ -1,0 +1,7 @@
+{
+  "name": "High Elf",
+  "baseHeight": "4'6\"",
+  "heightModifier": "2D10",
+  "baseWeight": 90,
+  "weightModifier": "1D4"
+}

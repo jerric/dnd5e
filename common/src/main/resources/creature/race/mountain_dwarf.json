@@ -1,0 +1,7 @@
+{
+  "name": "Mountain Dwarf",
+  "baseHeight": "4'",
+  "heightModifier": "2D4",
+  "baseWeight": 130,
+  "weightModifier": "2D6"
+}

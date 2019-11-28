@@ -1,3 +1,7 @@
 {
-  "name": "Human"
+  "name": "Human",
+  "baseHeight": "4'8\"",
+  "heightModifier": "2D10",
+  "baseWeight": 110,
+  "weightModifier": "2D4"
 }

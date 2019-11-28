@@ -3,7 +3,7 @@ package net.lliira.dnd5e.common.creature;
 import java.util.HashSet;
 import java.util.Set;
 
-public abstract class Ability {
+public class Ability {
 
   private static final int MIN_SCORE = 1;
   private static final int MAX_SCORE = 30;
