@@ -34,7 +34,7 @@ public class DiceTest {
             assertInRange(new Dice(20, 1, -1).roll(), 0, 19);
             assertInRange(new Dice(6, 1, 3).roll(), 4, 9);
             assertInRange(new Dice(5, 1, 6).roll(), 6, 11);
-            assertInRange(new Dice(8, 1, -4).roll(), -2, 24);
+            assertInRange(new Dice(8, 1, -4).roll(), -3, 4);
         }
     }
 
@@ -48,15 +48,13 @@ public class DiceTest {
         }
     }
 
-
-    @Test
-    public void testPattern() {
-        for (int i = 0; i < ITERATION; i++) {
-            assertInRange(new Dice("2D6-1").roll(), 1, 11);
-            assertInRange(new Dice("3D6+3").roll(), 6, 21);
-            assertInRange(new Dice("3D4-3").roll(), 0, 9);
-            assertInRange(new Dice("2D8+5").roll(), 7, 21);
-        }
+  @Test
+  public void testPattern() {
+      assertDice(new Dice("2D7"), 7, 2, 0);
+      assertDice(new Dice("2D6-1"), 6, 2, -1);
+    assertDice(new Dice("3D6+3"), 6, 3, 3);
+    assertDice(new Dice("3D4-3"), 4, 3, -3);
+    assertDice(new Dice("2D8+5"), 8, 2, 5);
     }
 
 
@@ -72,5 +70,15 @@ public class DiceTest {
 
     private static void assertInRange(int actual, int expectedFrom, int expectedTo) {
         Assert.assertTrue(String.format("actual(%d) not in expected range [%d, %d]", actual, expectedFrom, expectedTo), actual >= expectedFrom &&actual <= expectedTo);
+    }
+
+    private static void assertDice(Dice actual, int expectedSides, int expectedCount, int expectedModifier) {
+        assertField("sides", actual.getSides(), expectedSides);
+        assertField("count", actual.getCount(), expectedCount);
+        assertField("modifier", actual.getModifier(), expectedModifier);
+    }
+
+    private static void assertField(String fieldName, int actual, int expected) {
+        Assert.assertEquals(String.format("%s: %d != %d", fieldName, expected, actual), expected, actual);
     }
 }

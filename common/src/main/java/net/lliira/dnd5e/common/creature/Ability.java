@@ -33,7 +33,7 @@ public class Ability {
   public int getScore() {
     int score = baseScore_;
     for (AbilityAdjustment adjustment : adjustments) {
-      score += adjustment.baseAdjustment();
+      score += adjustment.getScore();
     }
     return Math.max(score, MIN_SCORE);
   }
