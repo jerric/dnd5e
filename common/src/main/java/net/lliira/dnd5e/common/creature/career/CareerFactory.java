@@ -1,4 +1,4 @@
-package net.lliira.dnd5e.common.creature;
+package net.lliira.dnd5e.common.creature.career;
 
 import net.lliira.dnd5e.common.util.ResourceLoader;
 

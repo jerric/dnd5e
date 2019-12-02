@@ -1,7 +1,28 @@
 {
   "name": "Mountain Dwarf",
-  "baseHeight": "4'",
-  "heightModifier": "2D4",
-  "baseWeight": 130,
-  "weightModifier": "2D6"
+  "base_height": "4'",
+  "height_modifier": "2D4",
+  "base_weight": 130,
+  "weight_modifier": "2D6",
+  "age": {
+    "adult": 50,
+    "max": 350
+  },
+  "alignments": [
+    "LawfulGood",
+    "LawfulNeutral"
+  ],
+  "size": "Medium",
+  "speed": 25,
+  "vision": "DarkVision",
+  "languages": [
+    "Common",
+    "Dwarvish"
+  ],
+  "constitution_adjustment": {
+    "score": 2
+  },
+  "strengthAdjustment": {
+    "score": 2
+  }
 }

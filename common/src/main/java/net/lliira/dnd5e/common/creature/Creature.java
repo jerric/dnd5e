@@ -9,7 +9,13 @@ public abstract class Creature {
   private final Ability Wisdom;
   private final Ability Charisma;
 
-  private Creature(Ability strength, Ability dexterity, Ability constitution, Ability intelligence, Ability wisdom, Ability charisma) {
+  private Creature(
+      Ability strength,
+      Ability dexterity,
+      Ability constitution,
+      Ability intelligence,
+      Ability wisdom,
+      Ability charisma) {
     Strength = strength;
     Dexterity = dexterity;
     Constitution = constitution;

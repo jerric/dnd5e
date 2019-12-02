@@ -1,7 +1,0 @@
-{
-  "name": "Halfling",
-  "baseHeight": "2'7\"",
-  "heightModifier": "2D4",
-  "baseWeight": 35,
-  "weightModifier": "1D1"
-}

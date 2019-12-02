@@ -1,0 +1,53 @@
+{
+  "name": "Bard",
+  "hit_dice": "1D8",
+  "hp_base": 8,
+  "proficiency": {
+    "armor": [
+      "LightArmor"
+    ],
+    "weapon": [
+      "SimpleWeapon",
+      "HandCrossbow",
+      "LongSword",
+      "Rapier",
+      "ShortSword"
+    ],
+    "saving_throws": [
+      "Dexterity",
+      "Charisma"
+    ]
+  },
+  "proficiency_bonuses": [
+    2,
+    2,
+    2,
+    2,
+    3,
+    3
+  ],
+  "cantrip_slots": [
+    2,
+    2,
+    2,
+    3,
+    3,
+    3
+  ],
+  "spell_level1_slots": [
+    2,
+    3,
+    4,
+    4,
+    4,
+    4
+  ],
+  "spell_level2_slots": [0,0,2,3,3,3],
+  "spell_level3_slots": [0,0,0,0,2,3],
+  "spell_level4_slots": [0,0,0,0,0,0],
+  "spell_level5_slots": [0,0,0,0,0,0],
+  "spell_level6_slots": [0,0,0,0,0,0],
+  "spell_level7_slots": [0,0,0,0,0,0],
+  "spell_level8_slots": [0,0,0,0,0,0],
+  "spell_level9_slots": [0,0,0,0,0,0]
+}

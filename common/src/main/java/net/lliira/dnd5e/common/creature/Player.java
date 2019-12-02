@@ -1,6 +1,8 @@
 package net.lliira.dnd5e.common.creature;
 
-
+import net.lliira.dnd5e.common.creature.career.Career;
+import net.lliira.dnd5e.common.creature.career.Proficiency;
+import net.lliira.dnd5e.common.creature.race.Race;
 import net.lliira.dnd5e.common.util.Dice;
 
 import java.util.HashMap;

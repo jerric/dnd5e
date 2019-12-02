@@ -1,7 +1,25 @@
 {
   "name": "Wood Elf",
-  "baseHeight": "4'6\"",
-  "heightModifier": "2D10",
-  "baseWeight": 100,
-  "weightModifier": "1D4"
+  "base_height": "4'6\"",
+  "height_modifier": "2D10",
+  "base_weight": 100,
+  "weight_modifier": "1D4",
+  "age": {
+    "adult": 100,
+    "max": 750
+  },
+  "alignments": [
+    "ChaoticGood",
+    "ChaoticNeutral"
+  ],
+  "size": "Medium",
+  "speed": 35,
+  "vision": "DarkVision",
+  "languages": ["Common", "Elvish"],
+  "dexterity_adjustment": {
+    "score": 2
+  },
+  "wisdom_adjustment": {
+    "score": 1
+  }
 }

@@ -8,7 +8,7 @@ public class Ability {
   private static final int MIN_SCORE = 1;
   private static final int MAX_SCORE = 30;
 
-  private final Set<AbilityAdjustment> adjustments;
+  private final Set<AttributeAdjustment> adjustments;
   private int baseScore_;
 
   protected Ability(int baseScore) {
@@ -22,17 +22,17 @@ public class Ability {
     this.baseScore_ = baseScore;
   }
 
-  public void registerAdjustment(AbilityAdjustment adjustment) {
+  public void registerAdjustment(AttributeAdjustment adjustment) {
     adjustments.add(adjustment);
   }
 
-  public void unregisterAdjustment(AbilityAdjustment adjustment) {
+  public void unregisterAdjustment(AttributeAdjustment adjustment) {
     adjustments.remove(adjustment);
   }
 
   public int getScore() {
     int score = baseScore_;
-    for (AbilityAdjustment adjustment : adjustments) {
+    for (var adjustment : adjustments) {
       score += adjustment.getScore();
     }
     return Math.max(score, MIN_SCORE);

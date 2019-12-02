@@ -1,0 +1,21 @@
+{
+  "name": "Lightfoot Halfling",
+  "base_height": "2'7\"",
+  "height_modifier": "2D4",
+  "base_weight": 35,
+  "weight_modifier": "1D1",
+  "age": {
+    "adult": 20,
+    "max": 150
+  },
+  "alignments": ["LawfulGood"],
+  "side": "Small",
+  "speed": 25,
+  "languages": ["Common", "Halfling"],
+  "dexterity_adjustment": {
+    "score": 2
+  },
+  "charisma_adjustment": {
+    "score": 1
+  }
+}

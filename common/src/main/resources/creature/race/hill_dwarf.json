@@ -1,23 +1,31 @@
 {
   "name": "Hill Dwarf",
-  "baseHeight": "3'8\"",
-  "heightModifier": "2D4",
-  "baseWeight": 115,
-  "weightModifier": "2D6",
-  "abilityAdjustments": [
-    {
-      "ability": "Constitution",
-      "score": 2
-    },
-    {
-      "ability": "Wisdom",
-      "score": 1
-    }
-  ],
+  "base_height": "3'8\"",
+  "height_modifier": "2D4",
+  "base_weight": 115,
+  "weight_modifier": "2D6",
   "age": {
-    "youngAge": 50,
-    "maxAge": 350
+    "adult": 50,
+    "max": 350
   },
-  "alignments": [ "LawfulGood", "LawfulNeutral" ],
-  "size": "Medium"
+  "alignments": [
+    "LawfulGood",
+    "LawfulNeutral"
+  ],
+  "size": "Medium",
+  "speed": 25,
+  "vision": "DarkVision",
+  "languages": [
+    "Common",
+    "Dwarvish"
+  ],
+  "constitution_adjustment": {
+    "score": 2
+  },
+  "wisdom_adjustment": {
+    "score": 1
+  },
+  "hp_adjustment": {
+    "score": 1
+  }
 }

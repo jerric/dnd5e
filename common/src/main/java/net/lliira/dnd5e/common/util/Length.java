@@ -49,12 +49,28 @@ public class Length {
 
   private void normalize() {
     int sign = inch >= 0 ? 1 : -1;
-    while(inch < 0 || inch >= 12) {
+    while (inch < 0 || inch >= 12) {
       foot += sign;
       inch -= sign * 12;
     }
     if (foot < 0) {
       foot = inch = 0;
     }
+  }
+
+  @Override
+  public String toString() {
+    var builder = new StringBuilder();
+    if (foot == 0 && inch == 0) {
+      builder.append("0'");
+    } else {
+      if (foot != 0) {
+        builder.append(foot).append('\'');
+      }
+      if (inch != 0) {
+        builder.append(inch).append('"');
+      }
+    }
+    return builder.toString();
   }
 }
