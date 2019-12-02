@@ -3,10 +3,10 @@
   "hit_dice": "1D8",
   "hp_base": 8,
   "proficiency": {
-    "armor": [
+    "armors": [
       "LightArmor"
     ],
-    "weapon": [
+    "weapons": [
       "SimpleWeapon",
       "HandCrossbow",
       "LongSword",
